@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 700px;
+            background-color: darkslategrey;
+            border: 2px solid black;
+            text-align: center;
+            margin: 30px 30px 30px;
+            font-size: 25px;
+            
+
+
+        }
+        .first{
+            background-color: tomato;
+        }
+
+        
+    
+        
+    </style>
+    <script src="jquery-3.6.3.js"> </script>
+</head>
+<body>
+    
+    <h1>ADD CLASS</h1>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis neque eius quod accusamus blanditiis commodi aspernatur repellendus aut impedit, maxime quo facere amet enim ipsa delectus eum? Ratione, modi.</p>
+
+    </div>
+    <button id="addbutton">Add class</button>
+    <button id="removebutton">Remove class</button>
+    <button id="togglebutton">Toggle class</button>
+    <!-- <button id="empty"> empty</button> -->
+
+    <script>
+        $('#addbutton').click(function(){
+            $('#box').addClass("first");
+        });
+
+        $('#removebutton').click(function(){
+            $('#box').removeClass("frist");
+        });
+
+        $('#togglebutton').click(function(){
+            $('#box').toggleClass("frist");
+        });
+
+        // $('#empty').click(function(){
+        //     $('#box').empty();
+        // });
+    </script>
+    
+</body>
+</html>
